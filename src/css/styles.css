@@ -1,18 +1,41 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.gallery {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  background: url('path_to_image');
+}
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #fff;
+  padding: 24px;
+}
+.email-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.textarea-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+.btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  color: white;
+  border: none;
+}
